@@ -1,0 +1,129 @@
+:root {
+    --blue-grey: rgb(83, 94, 116);
+    --very-light-grey: rgb(219, 214, 228);
+    --violet-grey: rgb(130, 115, 145);
+}
+body{
+    min-width: 640px;
+    background-color: var(--very-light-grey);
+}
+.header {
+    display: flex;
+    align-items: baseline;
+    padding: 20%;
+    background-color: var(--very-light-grey);
+    height: 120px;    
+}
+.name{    
+    height: auto;
+    align-self: center;
+    justify-content: center;
+    max-width: 350px;
+}
+.titlePortfolio {
+    font-weight: bolder;
+    color: var(--blue-grey);
+    margin-left: 8px;
+    align-self: flex-end;
+}
+.navB{
+    display: flex;
+    background-color: var(--blue-grey);
+    height: 60px;
+    width: 100%;
+}
+.navbar{
+    border: 2px solid var(--very-light-grey);
+    padding-left: 5%;
+    padding-right: 5px;
+    padding-bottom: 8px;
+    /* height: 40px; */
+    width: 100%;
+    align-self: center;
+}
+.btn-bar{
+    width: 75%;
+    margin: 0;    
+    color: var(--very-light-grey);  
+    text-align: center;
+    justify-content: space-around;
+    align-self: center;
+}
+.btn-bar div {
+    padding: 12px;
+    justify-content: right;
+    width: 102px;
+}
+.btn-bar div:nth-child(1) {
+    /* flex-basis: 0px; */
+    
+}
+.btn-bar div:nth-child(2) {
+    line-height: 16px;
+}
+.btn-bar div:nth-child(3) {
+    flex-basis: 0px;    
+}
+.btn-bar div:nth-child(4) {
+    flex-basis: 0px;
+    background-color: var(--violet-grey);   
+}
+a {
+    color: var(--very-light-grey);
+    text-decoration: none;
+}
+.login{
+    display: flex;
+    width: 25%;
+    padding-left: 8px;   
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-light-grey);
+    height: 48px;
+}
+.login a {
+    color: var(--blue-grey);
+    text-decoration: none;
+    font-weight: 700;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+.proyects{
+    display: flex;
+    border: 1px dotted black;
+    height: 500px;
+    /* width: 200px; */
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.divAside{
+    display: flex;
+    border: 1px dotted black;
+    height: 500px;
+    /* width: 200px; */
+    margin: 8px;    
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.foot{
+    display: flex;
+    background-color: var(--blue-grey);
+    height: 40px;
+    width: 100%;
+}
+.contact{    
+    text-align: end;
+    width: 100%;
+    align-self: center;
+    padding-right: 40px;    
+}
+.contact a {
+    font-weight: bolder;
+    color: var(--very-light-grey);
+    text-decoration: none;
+}
