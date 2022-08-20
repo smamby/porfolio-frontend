@@ -41,35 +41,45 @@ body{
     width: 100%;
     align-self: center;
 }
-.btn-bar{
-    width: 75%;
+.btn-bar {
+    width: 70%;
     margin: 0;    
     color: var(--very-light-grey);  
     text-align: center;
     justify-content: space-around;
     align-self: center;
 }
-.btn-bar div {
+.btn-bar a div {
     padding: 12px;
     justify-content: right;
     width: 102px;
 }
-.btn-bar div:nth-child(1) {
+.btn-bar a:nth-child(2) div{    
+    padding: 8px;
+}
+.btn-bar a:nth-child(1) div {
     /* flex-basis: 0px; */
     
 }
-.btn-bar div:nth-child(2) {
-    line-height: 16px;
+.btn-bar a:nth-child(2) {
+    line-height: 16px;    
 }
-.btn-bar div:nth-child(3) {
+.btn-bar a:nth-child(3) div {
     flex-basis: 0px;
     background-color: var(--violet-grey); 
 }
-a {
+.btn-bar a {
     color: var(--very-light-grey);
     text-decoration: none;
+    height: 48px;
+    width: 102px;
 }
-.login{
+.btn-bar a:hover, .btn-bar a div:hover{
+    color:blueviolet;
+    background-color: var(--very-light-grey);
+}
+
+.login {
     display: flex;
     width: 25%;
     padding-left: 8px;   
@@ -78,10 +88,14 @@ a {
     background-color: var(--very-light-grey);
     height: 48px;
 }
-.login a {
+.login , .login a div{
     color: var(--blue-grey);
     text-decoration: none;
     font-weight: 700;
+}
+.login:hover{
+    background-color: var(--violet-grey);
+    color: var(--very-light-grey);
 }
 section{
     display: flex;
